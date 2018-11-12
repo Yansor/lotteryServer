@@ -1,0 +1,23 @@
+package lottery.domains.content.global;
+
+public enum DbServerSyncEnum
+{
+    LOTTERY("LOTTERY", 0), 
+    LOTTERY_OPEN_TIME("LOTTERY_OPEN_TIME", 1), 
+    LOTTERY_PLAY_RULES("LOTTERY_PLAY_RULES", 2), 
+    LOTTERY_TYPE("LOTTERY_TYPE", 3), 
+    PAYMENT_CARD("PAYMENT_CARD", 4), 
+    PAYMENT_CHANNEL("PAYMENT_CHANNEL", 5), 
+    PAYMENT_CHANNEL_BANK("PAYMENT_CHANNEL_BANK", 6), 
+    SYS_CODE_AMOUNT("SYS_CODE_AMOUNT", 7), 
+    SYS_CODE_QUOTA("SYS_CODE_QUOTA", 8), 
+    SYS_CONFIG("SYS_CONFIG", 9), 
+    SYS_NOTICE("SYS_NOTICE", 10), 
+    ACTIVITY("ACTIVITY", 11), 
+    ADMIN_CDN("ADMIN_CDN", 12), 
+    SYS_PLATFORM("SYS_PLATFORM", 13), 
+    HIT_RANKING("HIT_RANKING", 14);
+    
+    private DbServerSyncEnum(final String s, final int n) {
+    }
+}
