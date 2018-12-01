@@ -165,6 +165,8 @@ public class DataFactoryImpl implements DataFactory, InitializingBean, ServletCo
                         }
                         else if (DbServerSyncEnum.HIT_RANKING.name().equals(key)) {
                             initUserBetsHitRankings();
+                        }else if(DbServerSyncEnum.SYS_CODE_QUOTA.name().equals(key)){
+
                         }
                         DbServerSyncMap.put(key, serverBean);
                     }
