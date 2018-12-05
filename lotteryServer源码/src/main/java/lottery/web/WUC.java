@@ -7,7 +7,7 @@ public final class WUC {
     }
 
     // 登录请求
-    //public static final String LOGIN						= "/Login";
+//    public static final String LOGIN						= "/Login";
 
     // 一次性token
     public static final String DISPOSABLE_TOKEN             = "/DisposableToken";

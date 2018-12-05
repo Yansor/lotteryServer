@@ -42,13 +42,13 @@
         <div class="form-info"><span id="demouser" class="demouser">立即试玩</span> 忘记密码？点击这里联系  <span data-command="kefu" class="kefu">在线客服</span> </div>
         <div class="form-action"><button class="btn-login" id="loginBtn">登陆</button></div>
     </div>
-   <%--  <div class="login-info">
+    <div class="login-info">
         <div class="logo"><img src="<%=cdnDomain%>static/images/logo-black.png?v=${cdnVersion}"></div>
         <h6>威霆娱乐手机客户端</h6>
         <P>支持安卓、苹果移动设备，走到哪玩到哪。</P>
         <P><img src="<%=cdnDomain%>static/images/ewm.png?v=${cdnVersion}" class="ewm"></P>
         <p><i class="icon iconfont">&#xf01ff;</i>下载PC客户端 <i style = "margin-left: 20px"class="icon iconfont">&#xf01ff;</i><span id="demouser" >立即试玩</span></p>
-    </div> --%>
+    </div>
    
 </div>
 <div id="login-bot">
