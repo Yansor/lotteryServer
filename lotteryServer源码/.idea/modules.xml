@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../adminManager/adminManager.iml" filepath="$PROJECT_DIR$/../adminManager/adminManager.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../lotteryCapture/lotteryCapture.iml" filepath="$PROJECT_DIR$/../lotteryCapture/lotteryCapture.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../lotteryOpen/lotteryOpen.iml" filepath="$PROJECT_DIR$/../lotteryOpen/lotteryOpen.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lotteryServer.iml" filepath="$PROJECT_DIR$/lotteryServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LotteryServer.iml" filepath="$PROJECT_DIR$/LotteryServer.iml" />
     </modules>
   </component>
 </project>

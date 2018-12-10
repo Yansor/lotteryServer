@@ -1,10 +1,17 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="lotteryServer:war exploded">
+  <artifact type="exploded-war" name="LotteryServer:war exploded">
     <output-path>$PROJECT_DIR$/target/lotteryServer</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>LotteryServer</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="lotteryServer" />
+          <element id="module-output" name="LotteryServer" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.5" />
@@ -77,7 +84,7 @@
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/lotteryServer/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="lotteryServer/web/Web" />
+      <element id="javaee-facet-resources" facet="LotteryServer/web/Web" />
     </root>
   </artifact>
 </component>

@@ -6,18 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="adminManager" />
-        <module name="lotteryCapture" />
-        <module name="lotteryOpen" />
-        <module name="lotteryServer" />
+        <module name="LotteryServer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="adminManager" target="1.8" />
-      <module name="lotteryCapture" target="1.8" />
-      <module name="LotteryOpen" target="1.8" />
-      <module name="lotteryOpen" target="1.8" />
-      <module name="lotteryServer" target="1.8" />
+      <module name="LotteryServer" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
