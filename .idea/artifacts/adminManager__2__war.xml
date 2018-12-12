@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="adminManager (2):war">
-    <output-path>$PROJECT_DIR$/admin 源码/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/test/META-INF/maven/adminManager/adminManager/target</output-path>
-    <root id="archive" name="adminManager.war">
-      <element id="artifact" artifact-name="adminManager (2):war exploded" />
-    </root>
-  </artifact>
-</component>

@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="lotteryServer (3) (lotteryServer):war">
-    <output-path>$PROJECT_DIR$/lotteryServer源码/target/m2e-wtp/web-resources/META-INF/maven/lotteryServer/lotteryServer/target</output-path>
-    <root id="archive" name="lotteryServer.war">
-      <element id="artifact" artifact-name="lotteryServer (3) (lotteryServer):war exploded" />
-    </root>
-  </artifact>
-</component>

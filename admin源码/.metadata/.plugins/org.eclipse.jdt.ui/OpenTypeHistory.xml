@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy>
-<typeInfo handle="=test/src&lt;javautils.redis{JedisTemplate.java[JedisTemplate[JedisAction" modifiers="513" timestamp="1541067761915"/>
-<typeInfo handle="=test/src&lt;javautils.redis{JedisTemplate.java[JedisTemplate[PipelineAction" modifiers="513" timestamp="1541067761915"/>
-<typeInfo handle="=test/src&lt;javautils.redis.pool{JedisSentinelPool.java[JedisSentinelPool[MasterSwitchListener[MasterSwitchSubscriber" modifiers="2" timestamp="1541152043242"/>
-</typeInfoHistroy>

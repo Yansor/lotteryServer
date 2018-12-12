@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/lotteryServer源码/lotteryServer (1).iml" filepath="$PROJECT_DIR$/lotteryServer源码/lotteryServer (1).iml" />
-      <module fileurl="file://$PROJECT_DIR$/lotteryServer源码/target/m2e-wtp/web-resources/META-INF/maven/lotteryServer/lotteryServer/lotteryServer (2).iml" filepath="$PROJECT_DIR$/lotteryServer源码/target/m2e-wtp/web-resources/META-INF/maven/lotteryServer/lotteryServer/lotteryServer (2).iml" />
-      <module fileurl="file://$PROJECT_DIR$/lotteryServer源码/target/m2e-wtp/web-resources/META-INF/maven/lotteryServer/lotteryServer/lotteryServer (3) (lotteryServer).iml" filepath="$PROJECT_DIR$/lotteryServer源码/target/m2e-wtp/web-resources/META-INF/maven/lotteryServer/lotteryServer/lotteryServer (3) (lotteryServer).iml" />
+      <module fileurl="file://$PROJECT_DIR$/服务器前台/target/tomcat/work/Tomcat/localhost/localhost.iml" filepath="$PROJECT_DIR$/服务器前台/target/tomcat/work/Tomcat/localhost/localhost.iml" />
+      <module fileurl="file://$PROJECT_DIR$/服务器前台/src/main/main.iml" filepath="$PROJECT_DIR$/服务器前台/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/服务器前台/src/test/test.iml" filepath="$PROJECT_DIR$/服务器前台/src/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/服务器后台/staticmedia/theme/assets/custom/plugins/zeroclipboard-master/src/zeroclipboard-master.iml" filepath="$PROJECT_DIR$/服务器后台/staticmedia/theme/assets/custom/plugins/zeroclipboard-master/src/zeroclipboard-master.iml" />
     </modules>
   </component>
 </project>
