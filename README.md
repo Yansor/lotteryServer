@@ -14,5 +14,6 @@
 
 ![管理](lotteryServer源码/管理端.jpg "optional title")
 
+采集开奖程序打包命令 : jar cvfm lotteryCaptureNew.jar ./META-INF/MANIFEST.MF -C ./out/production/lotteryCaptureNew .
 
 Q 895686843 软件定做  程序开发
