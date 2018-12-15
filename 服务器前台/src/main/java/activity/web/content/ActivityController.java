@@ -30,9 +30,9 @@ import lottery.web.helper.session.SessionUser;
 
 /**
  * 活动控制服务类
-* <p>Title: ActivityController</p>  
-* <p>Description: </p>  
-* @author James  
+* <p>Title: ActivityController</p>
+* <p>Description: </p>
+* @author James
 * @date 2018年2月3日
  */
 @Controller
@@ -67,8 +67,8 @@ public class ActivityController extends AbstractActionController {
 	//返点活动服务类
 	@Autowired
 	private ActivityRebateService  activityRebateService;
-	
-	
+
+
 
 	@Autowired
 	private ActivityRedPacketRainBillService rainBillService;
@@ -281,19 +281,19 @@ public class ActivityController extends AbstractActionController {
 		    json.data("rebateList", rebateList);
 			return json.toJson();
 		}
-		
+
 		if (sessionUser.getId() == Global.USER_TOP_ID) {
 			json.set(2, "2-13");
 			return json.toJson();
 		}
 		//查询所有返点活动集合
 	    List<ActivityRebate> rebateList =  activityRebateService.getRebateActivityList();
-	    
+
 	    json.data("rebateList", rebateList);
 		return json.toJson();
 	}
-	
-	
+
+
 /*	@RequestMapping(value = WUC.ACTIVITY_WHEEL_DRAW, method = { RequestMethod.POST })
 	@ResponseBody
 	public Map<String, Object> ACTIVITY_WHEEL_DRAW(HttpSession session, HttpServletRequest request) {
@@ -324,15 +324,15 @@ public class ActivityController extends AbstractActionController {
 		return json.toJson();
 	}*/
 
-/*    //
+\    //
 	// @RequestMapping(value = WUC.ACTIVITY_PACKET_LOAD, method = { RequestMethod.POST })
 	// @ResponseBody
 	// public Map<String, Object> ACTIVITY_PACKET_LOAD(HttpSession session, HttpServletRequest request) {
 	// 	WebJSON json = new WebJSON(dataFactory);
 	// 	User uEntity = super.getCurrUser(session, request);
 	// 	String ip = HttpUtil.getRealIp(request);
-	// 	if(uEntity != null) {
-	// 		List<ActivityPacketInfo> list = packetService.getAvaliablePackets(uEntity.getId(), ip);
+//	 	if(uEntity != null) {
+//	 		List<ActivityPacketInfo> list = packetService.getAvaliablePackets(uEntity.getId(), ip);
 	// 		List<ActivityPacketInfoVO> data = new ArrayList<ActivityPacketInfoVO>();
 	// 		for (ActivityPacketInfo activityPacketInfo : list) {
 	// 			ActivityPacketInfoVO vo = new ActivityPacketInfoVO(activityPacketInfo, dataFactory, userInfoDao);
@@ -343,7 +343,7 @@ public class ActivityController extends AbstractActionController {
 	// 	json.set(0, "0-1");
 	// 	return json.toJson();
 	// }
-*/
+
 	// @RequestMapping(value = WUC.ACTIVITY_PACKET_SEND, method = { RequestMethod.POST })
 	// @ResponseBody
 	// public synchronized Map<String, Object> ACTIVITY_PACKET_SEND(HttpSession session, HttpServletRequest request) {

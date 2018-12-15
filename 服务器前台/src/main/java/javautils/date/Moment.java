@@ -534,7 +534,7 @@ public class Moment {
 	/**
 	 * 根据参数获取
 	 * 
-	 * @param name
+	 * @param key
 	 * @return
 	 */
 	public int get(String key) {
@@ -649,7 +649,7 @@ public class Moment {
 
 	/**
 	 * 增加指定key的时间
-	 * @param number
+	 * @param amount
 	 * @param key
 	 * @return
 	 */
@@ -699,7 +699,7 @@ public class Moment {
 	
 	/**
 	 * 减去指定key的时间
-	 * @param number
+	 * @param amount
 	 * @param key
 	 * @return
 	 */
