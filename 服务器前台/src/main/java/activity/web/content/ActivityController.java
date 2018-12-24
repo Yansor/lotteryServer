@@ -324,7 +324,7 @@ public class ActivityController extends AbstractActionController {
 		return json.toJson();
 	}*/
 
-\    //
+    //
 	// @RequestMapping(value = WUC.ACTIVITY_PACKET_LOAD, method = { RequestMethod.POST })
 	// @ResponseBody
 	// public Map<String, Object> ACTIVITY_PACKET_LOAD(HttpSession session, HttpServletRequest request) {
