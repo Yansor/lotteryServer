@@ -22,9 +22,3 @@ public class Catalina
   
   public void executeOthers() {}
 }
-
-
-/* Location:              /Users/vincent/Downloads/至尊程序/lotteryCapture/lotteryCaptureRepair.jar!/lottery/bin/Catalina.class
- * Java compiler version: 8 (52.0)
- * JD-Core Version:       0.7.1
- */
