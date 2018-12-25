@@ -56,7 +56,9 @@ public class OpenCaiJobRepair {
             "http://api.duourl.com/api?p=json&t=djydwfc&limit=1&token=f31e3156d7563c34", //东京1.5分彩
             "http://api.b1api.com/api?p=json&t=xjssc&limit=1&token=3f67473734bb03a0" , //新疆时时彩
             "http://api.b1api.com/api?p=json&t=cqssc&limit=1&token=3f67473734bb03a0"  , //重庆时时彩
-            "http://api.duourl.com/api?p=json&t=tjssc&limit=1&token=f31e3156d7563c34"  //天津时时彩
+            "http://api.duourl.com/api?p=json&t=tjssc&limit=1&token=f31e3156d7563c34" , //天津时时彩
+            "http://api.b1api.com/api?p=json&t=fc3d&limit=1&token=3f67473734bb03a0",  //福彩3d
+            "http://api.b1api.com/api?p=json&t=pl3&limit=1&token=3f67473734bb03a0"    //排列3
     };
     @Autowired
     private LotteryOpenCodeService lotteryOpenCodeService;
@@ -440,6 +442,17 @@ public class OpenCaiJobRepair {
             expect = expect.substring(0, 8) + "-" + expect.substring(8);
             //前端code fgffc
             lotteryOpenCode = new LotteryOpenCode("tjssc", expect, bean.getOpencode(), bean.getOpentime(), Integer.valueOf(0));
+
+        }else if(site.contains("fc3d")){
+            String expect = bean.getExpect();
+            //前端code fc3d
+            lotteryOpenCode = new LotteryOpenCode("fc3d", expect, bean.getOpencode(), bean.getOpentime(), Integer.valueOf(0));
+
+        }
+        else if(site.contains("pl3")){
+            String expect = bean.getExpect();
+            //前端code fc3d
+            lotteryOpenCode = new LotteryOpenCode("pl3", expect, bean.getOpencode(), bean.getOpentime(), Integer.valueOf(0));
 
         }
 
