@@ -446,14 +446,14 @@ public class OpenCaiJobRepair {
         }else if(site.contains("fc3d")){
             String expect = bean.getExpect();
             //前端code fc3d
-            expect = expect.substring(2, 8);
+            expect = expect.substring(2, 7);
             lotteryOpenCode = new LotteryOpenCode("fc3d", expect, bean.getOpencode(), bean.getOpentime(), Integer.valueOf(0));
 
         }
         else if(site.contains("pl3")){
             String expect = bean.getExpect();
             //前端code fc3d
-            expect = expect.substring(2, 8) ;
+            expect = expect.substring(2, 7) ;
             lotteryOpenCode = new LotteryOpenCode("pl3", expect, bean.getOpencode(), bean.getOpentime(), Integer.valueOf(0));
 
         }
