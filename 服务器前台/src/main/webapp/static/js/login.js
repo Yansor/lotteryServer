@@ -16,14 +16,16 @@ $(function(){
         }
     });
 
+	//alert(top.window);
+	//alert(top.window.location.pathname);
     // 如果当前页面不是登录页面，则跳到登录页面
-    if (top.window && top.window.location.pathname !== '/login') {
-        top.window.location = '/login';
-    }
+   // if (top.window && top.window.location.pathname !== '/login') {
+     //   top.window.location = '/login';
+ //   }
 
     // 客服按钮点击
     $doc.on('click', '[data-command=kefu]', function(e) {
-    	var url = 'https://chat56.live800.com/live800/chatClient/chatbox.jsp?companyID=971030&configID=161674&jid=2828750180&s=1';
+    	var url = 'http://api.pop800.com/chat/444055';
         window.open(url, 'service', 'height=600,width=800,directories=no,location=no,menubar=no,resizable=no,screenX=' + (window.screen.width - 600) / 2 + ',creenY=' + (window.screen.height - 500) / 2 + ',scrollbars=no,titlebar=no,toolbar=no')
     });
     
@@ -48,7 +50,7 @@ $(function(){
     	var showhtml ='<div id="" class="layui-layer-content" style="height: 400px;">'+
 			        '<div class="xz_box">'+
 			            '<div class="xz_cent">'+
-			                '<div class="xz_1">WINonline手机APP</div>'+
+			                '<div class="xz_1">万维手机APP</div>'+
 			                '<div class="xz_2">当别人还沉寂在敲打键盘进行游戏时丶我们已经将时下最火的彩票、真人视讯、捕鱼、电子游艺等装进了口袋，让您真正体验裤兜里的快乐。</div>'+
 			            '</div>'+
 			            '<div class="erweima">'+
@@ -152,9 +154,9 @@ $(function(){
             },
             success: function(res) {
                 if (res.error === 0) {
-                    // $.YF.alert_login("本系統為好彩系統獨家開發,JAVA語言開發，集合市面上主流功能（日分紅,契約，预设开奖）等一系列功能，此版本為運營版本," +
-                    //     "本站唯一聯係"+"<br>"+"QQ：356570723   1787064872"+
-                    //     "<br>"+"本站仅供学习和参考，不做商业用途", logout,function(){
+                    // $.YF.alert_login
+                    //   
+                    //    
                     //     successLogin(username);
                     // }, function(){
                     //     setTimeout(function(){
