@@ -35,26 +35,27 @@ public class OpenCaiJobRepair {
 //    private static final String[] SITES = new String[]{"http://d.apiplus.net", "http://z.apiplus.net"};
 
     private static final String [] REPAIR_SITE = new String [] {
-//            "http://api.duourl.com/api?p=json&t=txffc&limit=1&token=f31e3156d7563c34" ,  //腾讯分分彩
-            "http://api.duourl.com/api?p=json&t=qqffc&limit=1&token=f31e3156d7563c34" ,  //qq分分彩
+            "http://api.b1api.com/api?p=json&t=txffc&limit=1&token=3f67473734bb03a0" ,  //腾讯分分彩
+            "http://api.b1api.com/api?p=json&t=qqffc&limit=1&token=3f67473734bb03a0" ,  //qq分分彩
             "http://api.duourl.com/api?p=json&t=jxk3&limit=10&token=f31e3156d7563c34" ,   //江西快3
             "http://api.duourl.com/api?p=json&t=hebk3&limit=1&token=f31e3156d7563c34" ,  //河北快3
             "http://api.duourl.com/api?p=json&t=gxk3&limit=1&token=f31e3156d7563c34"  ,  //广西快三
-            "http://api.duourl.com/api?p=json&t=jsk3&limit=1&token=f31e3156d7563c34"  ,  //江苏快三
-            "http://api.duourl.com/api?p=json&t=shk3&limit=1&token=f31e3156d7563c34"  ,  // 上海快三
+            "http://api.b1api.com/api?p=json&t=jsk3&limit=1&token=3f67473734bb03a0"  ,  //江苏快三
+            "http://api.b1api.com/api?p=json&t=shk3&limit=1&token=3f67473734bb03a0"  ,  // 上海快三
             "http://api.duourl.com/api?p=json&t=hbk3&limit=1&token=f31e3156d7563c34"  ,  // 湖北快三
-            "http://api.duourl.com/api?p=json&t=ahk3&limit=1&token=f31e3156d7563c34"  ,  //安徽快三
-            "http://api.duourl.com/api?p=json&t=xj115&limit=1&token=f31e3156d7563c34" ,  //新疆11选5
+            "http://api.b1api.com/api?p=json&t=ahk3&limit=1&token=3f67473734bb03a0"  ,  //安徽快三
+            "http://api.b1api.com/api?p=json&t=xj115&limit=1&token=3f67473734bb03a0" ,  //新疆11选5
             "http://api.duourl.com/api?p=json&t=ah115&limit=1&token=f31e3156d7563c34" , //安徽11选5
-            "http://api.duourl.com/api?p=json&t=sh115&limit=1&token=f31e3156d7563c34" , //上海11选5
-            "http://api.duourl.com/api?p=json&t=jx115&limit=1&token=f31e3156d7563c34" , //江西11选5
+            "http://api.b1api.com/api?p=json&t=sh115&limit=1&token=3f67473734bb03a0" , //上海11选5
+            "http://api.b1api.com/api?p=json&t=jx115&limit=1&token=3f67473734bb03a0" , //江西11选5
             "http://api.duourl.com/api?p=json&t=sd115&limit=1&token=f31e3156d7563c34" , //山东11选5
-            "http://api.duourl.com/api?p=json&t=gd115&limit=1&token=f31e3156d7563c34" , //广东11选5
-            "http://api.duourl.com/api?p=json&t=bjpk10&limit=1&token=f31e3156d7563c34", //北京PK10
+            "http://api.b1api.com/api?p=json&t=gd115&limit=1&token=3f67473734bb03a0" , //广东11选5
+//            "http://api.duourl.com/api?p=json&t=bjpk10&limit=1&token=f31e3156d7563c34", //北京PK10
+            "http://api.b1api.com/api?p=json&t=bjpk10&limit=1&token=3f67473734bb03a0",
             "http://api.duourl.com/api?p=json&t=hgydwfc&limit=1&token=f31e3156d7563c34", //韩国1.5分彩
             "http://api.duourl.com/api?p=json&t=djydwfc&limit=1&token=f31e3156d7563c34", //东京1.5分彩
-            "http://api.duourl.com/api?p=json&t=xjssc&limit=1&token=f31e3156d7563c34" , //新疆时时彩
-            "http://api.duourl.com/api?p=json&t=cqssc&limit=1&token=f31e3156d7563c34"  , //重庆时时彩
+            "http://api.b1api.com/api?p=json&t=xjssc&limit=1&token=3f67473734bb03a0" , //新疆时时彩
+            "http://api.b1api.com/api?p=json&t=cqssc&limit=1&token=3f67473734bb03a0"  , //重庆时时彩
             "http://api.duourl.com/api?p=json&t=tjssc&limit=1&token=f31e3156d7563c34"  //天津时时彩
     };
     @Autowired
@@ -93,25 +94,27 @@ public class OpenCaiJobRepair {
 
         for(int i = 0; i < REPAIR_SITE.length; ++i) {
             String site = REPAIR_SITE[i];
-            logger.debug("开始抓取OpenCai[{}]开奖数据", site);
-            long start = System.currentTimeMillis();
+            new Thread(()->{
+                logger.debug("开始抓取OpenCai[{}]开奖数据", site);
+                long start = System.currentTimeMillis();
 //            String repairSite = "http://r.apiplus.net/";
 //            String repairUrl = repairSite + "/newly.do?token=dea265e2986ba09933afaeb7438a84e1&code=xjssc&rows=5&format=json";
 //            String url = site + "/newly.do?token=tc5b7f6b9131346d3k&rows=5&format=json" + "&_=" + System.currentTimeMillis();
 //            String result = getHttpResult(url);
-            String result = getHttpResult(site);
-            boolean succeed = false;
-            if (StringUtils.isNotEmpty(result)) {
-                succeed = this.handleData(result, site);
-            }
+                String result = getHttpResult(site);
+                boolean succeed = false;
+                if (StringUtils.isNotEmpty(result)) {
+                    succeed = this.handleData(result, site);
+                }
 
-            long spend = System.currentTimeMillis() - start;
-            if (succeed) {
-                logger.debug("成功抓取OpenCai[{}]开奖数据，并处理成功，耗时{}", site, spend);
-                break;
-            }
+                long spend = System.currentTimeMillis() - start;
+                if (succeed) {
+                    logger.debug("成功抓取OpenCai[{}]开奖数据，并处理成功，耗时{}", site, spend);
 
-            logger.warn("完成抓取OpenCai[{}]开奖数据，但处理失败，耗时{}", site, spend);
+                }else
+                logger.warn("完成抓取OpenCai[{}]开奖数据，但处理失败，耗时{}", site, spend);
+            }).start();
+
         }
 
     }
@@ -408,7 +411,7 @@ public class OpenCaiJobRepair {
             lotteryOpenCode = new LotteryOpenCode("gd11x5", expect, bean.getOpencode(), bean.getOpentime(), Integer.valueOf(0));
           }else if(site.contains("bjpk10")){
             String expect = bean.getExpect();
-            expect = expect.substring(0, 8) + "-" + expect.substring(8);
+//            expect = expect.substring(0, 8) + "-" + expect.substring(8);
             //前端code fgffc
             lotteryOpenCode = new LotteryOpenCode("bjpk10", expect, bean.getOpencode(), bean.getOpentime(), Integer.valueOf(0));
         }else if(site.contains("hgydwfc")){

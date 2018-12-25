@@ -1,13 +1,13 @@
-/*    */ package com.fsy.javautils.datasource;
-/*    */ 
-/*    */ import com.alibaba.druid.filter.logging.Log4jFilter;
-/*    */ import com.alibaba.druid.filter.stat.StatFilter;
-/*    */ 
-/*    */ 
-/*    */ public class ConfigDruidDataSource
-/*    */ {
-/*    */   public static Log4jFilter configLog4jFilter()
-/*    */   {
+ package com.fsy.javautils.datasource;
+
+ import com.alibaba.druid.filter.logging.Log4jFilter;
+ import com.alibaba.druid.filter.stat.StatFilter;
+
+
+ public class ConfigDruidDataSource
+ {
+   public static Log4jFilter configLog4jFilter()
+   {
 /* 11 */     Log4jFilter filter = new Log4jFilter();
 /* 12 */     filter.setStatementExecuteQueryAfterLogEnabled(false);
 /* 13 */     filter.setStatementExecuteUpdateAfterLogEnabled(false);
@@ -23,16 +23,16 @@
 /* 23 */     filter.setStatementLogEnabled(false);
 /* 24 */     filter.setStatementLogErrorEnabled(false);
 /* 25 */     return filter;
-/*    */   }
-/*    */   
-/*    */   public static StatFilter configStatFilter() {
+   }
+
+   public static StatFilter configStatFilter() {
 /* 29 */     StatFilter filter = new StatFilter();
 /* 30 */     filter.setSlowSqlMillis(5000L);
 /* 31 */     filter.setLogSlowSql(true);
 /* 32 */     filter.setMergeSql(true);
 /* 33 */     return filter;
-/*    */   }
-/*    */ }
+   }
+ }
 
 
 /* Location:              /Users/vincent/Downloads/至尊程序/lotteryCapture/lotteryCaptureRepair.jar!/javautils/datasource/ConfigDruidDataSource.class
