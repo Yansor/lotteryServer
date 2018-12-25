@@ -446,12 +446,14 @@ public class OpenCaiJobRepair {
         }else if(site.contains("fc3d")){
             String expect = bean.getExpect();
             //前端code fc3d
+            expect = expect.substring(2, 7);
             lotteryOpenCode = new LotteryOpenCode("fc3d", expect, bean.getOpencode(), bean.getOpentime(), Integer.valueOf(0));
 
         }
         else if(site.contains("pl3")){
             String expect = bean.getExpect();
             //前端code fc3d
+            expect = expect.substring(2, 7) ;
             lotteryOpenCode = new LotteryOpenCode("pl3", expect, bean.getOpencode(), bean.getOpentime(), Integer.valueOf(0));
 
         }
@@ -526,5 +528,11 @@ public class OpenCaiJobRepair {
         String codeSumStr = String.valueOf(codeSum);
         String finalCode = codeSumStr.substring(codeSumStr.length() - 1);
         return finalCode;
+    }
+
+    public static void main(String[] args) {
+        String a = "2018282";
+        System.out.println(a.substring(2, 7));
+
     }
 }
