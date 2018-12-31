@@ -34,31 +34,33 @@ public class OpenCaiJobRepair {
     private static final String SUB_URL = "/newly.do?token=tc5b7f6b9131346d3k&rows=5&format=json";
 //    private static final String[] SITES = new String[]{"http://d.apiplus.net", "http://z.apiplus.net"};
 
+
+    //Load from disk xml or json file called
     private static final String [] REPAIR_SITE = new String [] {
-            "http://api.b1api.com/api?p=json&t=txffc&limit=1&token=3f67473734bb03a0" ,  //腾讯分分彩
-            "http://api.b1api.com/api?p=json&t=qqffc&limit=1&token=3f67473734bb03a0" ,  //qq分分彩
+            "http://api.b1api.com/api?p=json&t=txffc&limit=1&token=aeaca033f6727bc9" ,  //腾讯分分彩
+            "http://api.b1api.com/api?p=json&t=qqffc&limit=1&token=aeaca033f6727bc9" ,  //qq分分彩
             "http://api.duourl.com/api?p=json&t=jxk3&limit=10&token=f31e3156d7563c34" ,   //江西快3
             "http://api.duourl.com/api?p=json&t=hebk3&limit=1&token=f31e3156d7563c34" ,  //河北快3
             "http://api.duourl.com/api?p=json&t=gxk3&limit=1&token=f31e3156d7563c34"  ,  //广西快三
-            "http://api.b1api.com/api?p=json&t=jsk3&limit=1&token=3f67473734bb03a0"  ,  //江苏快三
-            "http://api.b1api.com/api?p=json&t=shk3&limit=1&token=3f67473734bb03a0"  ,  // 上海快三
+            "http://api.b1api.com/api?p=json&t=jsk3&limit=1&token=aeaca033f6727bc9"  ,  //江苏快三
+            "http://api.b1api.com/api?p=json&t=shk3&limit=1&token=aeaca033f6727bc9"  ,  // 上海快三
             "http://api.duourl.com/api?p=json&t=hbk3&limit=1&token=f31e3156d7563c34"  ,  // 湖北快三
-            "http://api.b1api.com/api?p=json&t=ahk3&limit=1&token=3f67473734bb03a0"  ,  //安徽快三
-            "http://api.b1api.com/api?p=json&t=xj115&limit=1&token=3f67473734bb03a0" ,  //新疆11选5
+            "http://api.b1api.com/api?p=json&t=ahk3&limit=1&token=aeaca033f6727bc9"  ,  //安徽快三
+            "http://api.b1api.com/api?p=json&t=xj115&limit=1&token=aeaca033f6727bc9" ,  //新疆11选5
             "http://api.duourl.com/api?p=json&t=ah115&limit=1&token=f31e3156d7563c34" , //安徽11选5
-            "http://api.b1api.com/api?p=json&t=sh115&limit=1&token=3f67473734bb03a0" , //上海11选5
-            "http://api.b1api.com/api?p=json&t=jx115&limit=1&token=3f67473734bb03a0" , //江西11选5
+            "http://api.b1api.com/api?p=json&t=sh115&limit=aeaca033f6727bc9" , //上海11选5
+            "http://api.b1api.com/api?p=json&t=jx115&limit=aeaca033f6727bc9" , //江西11选5
             "http://api.duourl.com/api?p=json&t=sd115&limit=1&token=f31e3156d7563c34" , //山东11选5
-            "http://api.b1api.com/api?p=json&t=gd115&limit=1&token=3f67473734bb03a0" , //广东11选5
+            "http://api.b1api.com/api?p=json&t=gd115&limit=1&token=aeaca033f6727bc9" , //广东11选5
 //            "http://api.duourl.com/api?p=json&t=bjpk10&limit=1&token=f31e3156d7563c34", //北京PK10
-            "http://api.b1api.com/api?p=json&t=bjpk10&limit=1&token=3f67473734bb03a0",
+            "http://api.b1api.com/api?p=json&t=bjpk10&limit=1&token=aeaca033f6727bc9", //北京pk10
             "http://api.duourl.com/api?p=json&t=hgydwfc&limit=1&token=f31e3156d7563c34", //韩国1.5分彩
             "http://api.duourl.com/api?p=json&t=djydwfc&limit=1&token=f31e3156d7563c34", //东京1.5分彩
-            "http://api.b1api.com/api?p=json&t=xjssc&limit=1&token=3f67473734bb03a0" , //新疆时时彩
-            "http://api.b1api.com/api?p=json&t=cqssc&limit=1&token=3f67473734bb03a0"  , //重庆时时彩
+            "http://api.b1api.com/api?p=json&t=xjssc&limit=1&token=aeaca033f6727bc9" , //新疆时时彩
+            "http://api.b1api.com/api?p=json&t=cqssc&limit=1&token=aeaca033f6727bc9"  , //重庆时时彩
             "http://api.duourl.com/api?p=json&t=tjssc&limit=1&token=f31e3156d7563c34" , //天津时时彩
-            "http://api.b1api.com/api?p=json&t=fc3d&limit=1&token=3f67473734bb03a0",  //福彩3d
-            "http://api.b1api.com/api?p=json&t=pl3&limit=1&token=3f67473734bb03a0"    //排列3
+            "http://api.b1api.com/api?p=json&t=fc3d&limit=1&token=aeaca033f6727bc9",  //福彩3d
+            "http://api.b1api.com/api?p=json&t=pl3&limit=1&token=aeaca033f6727bc9"    //排列3
     };
     @Autowired
     private LotteryOpenCodeService lotteryOpenCodeService;
