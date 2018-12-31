@@ -1,12 +1,12 @@
-/*通用样式文件，该页面必须定义通用样式，不能给单个页面定义样式，本文件会应用到所有页面中*/
+﻿/*通用样式文件，该页面必须定义通用样式，不能给单个页面定义样式，本文件会应用到所有页面中*/
 
 /*字体图标*/
 @font-face {font-family: "iconfont";
-    src: url('../css/font/iconfont.eot'); /* IE9*/
-    src: url('../css/font/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../css/font/iconfont.woff') format('woff'), /* chrome, firefox */
-    url('../css/font/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-    url('../css/font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+    src: url('../fonts/iconfont.eot'); /* IE9*/
+    src: url('../fonts/iconfont.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/iconfont.woff') format('woff'), /* chrome, firefox */
+    url('../fonts/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('../fonts/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
 }
 .iconfont {
     font-family:"iconfont" !important;
@@ -449,7 +449,7 @@ textarea{resize: none;}
 /*.swal2-modal.popup .swal2-modal .swal2-validationerror{margin: 0 -20px 10px -20px!important;}*/
 .swal2-modal .swal2-styled{font-size: 12px!important;margin: 5px 5px 10px!important;}
 .swal2-modal .swal2-styled:focus{-webkit-box-shadow: none!important;box-shadow:none!important;;}
-.swal2-modal.popup  .swal2-close{ text-indent: -9999px;  background:url(../images/cw/none.png) no-repeat; width:34px; height:22px; position:absolute; right:0; top:15px; cursor:pointer;outline: none;border-radius: 0px;}
+.swal2-modal.popup  .swal2-close{ text-indent: -9999px;  background:url(../images/none.png) no-repeat; width:34px; height:22px; position:absolute; right:0; top:15px; cursor:pointer;outline: none;border-radius: 0px;}
 .swal2-modal .swal2-validationerror::before{width: 18px!important;height: 18px!important;line-height: 18px!important;}
 .swal2-modal.popup .swal2-title{height: 40px;line-height: 32px; border-bottom: solid 1px #e5e5e5;text-align: left;padding-left: 20px;}
 .swal2-modal.popup .swal2-title i{font-size: 14px;}
@@ -464,12 +464,12 @@ textarea{resize: none;}
 .popup-window .popup-title{ line-height:22px; color:#777d83; font-weight: 600;font-size:12px;text-align: center;display: block;padding: 0 30px 10px 30px;}
 .popup-window .popup-group .label{display: inline-table;width:80px; height:60px;line-height:60px;text-align:right; color:#777d83; margin-right:6px;font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;font-size: 12px;}
 .popup-window .popup-group .input-text{display: inline-table;min-width: 310px;width:auto; max-width:260px;height:38px; box-shadow: 2px 2px 4px 0px rgba(51, 57, 65, 0.07) inset;font-size: 12px;border:solid 1px #e5e5e5; border-radius:2px; text-indent:1em; outline:none; line-height:38px;}
-.popup-window .popup-group .input-text:disabled{background:url(../images/cw/text_bg_1.jpg) repeat;color:#777d83; }
+.popup-window .popup-group .input-text:disabled{background:url(../images/text_bg_1.jpg) repeat;color:#777d83; }
 .popup-window .popup-group .input-slider{display: inline-table;min-width: 260px;width:auto; max-width:280px;height:38px;line-height:38px;}
 .popup-window .popup-group .slider-text{display: inline-table;width:30px; height:38px;line-height:38px;margin-left: 5px;color:#777d83;text-align: left;}
 
 .popup-window .popup-group .input-select{display: inline-table;min-width: 310px;width:auto; max-width:260px;height:38px; box-shadow: 2px 2px 4px 0px rgba(51, 57, 65, 0.07) inset; border:solid 1px #e5e5e5; border-radius:2px; text-indent:0.4em; outline:none; line-height:38px;color:#777d83;font-size: 12px;}
-.popup-window .popup-group .input-select:disabled{background:url(../images/cw/text_bg_1.jpg) repeat;color:#777d83; }
+.popup-window .popup-group .input-select:disabled{background:url(../images/text_bg_1.jpg) repeat;color:#777d83; }
 
 .popup-window .popup-group-static .label{display: inline-table;width:80px; height:50px;line-height:50px;text-align:right; color:#777d83; margin-right:6px;font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;font-size: 12px;}
 .popup-window .popup-group-static .static-text{display: inline-table;min-width: 310px;width:auto; max-width:260px;height:50px;line-height:50px;text-align: left;color: #323840;font-family: "Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;font-size: 12px;}

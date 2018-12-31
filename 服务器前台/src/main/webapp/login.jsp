@@ -1,4 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+
 <!DOCTYPE html>
 <html>
 <head lang="en">
@@ -19,24 +20,18 @@ if (cdnDomain == '/' || cdnDomain == '//') {
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>用户登录</title>
     <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon">
+    <link href="static/css/common-white.css" rel="stylesheet">
     <link href="static/css/login.css" rel="stylesheet">
-      <style>
-        .logoimg{
-  text-align: center!important;
-      padding: 0;
-          padding-top: 15px;
-}
-             .logoimg>img{
-  
-          padding-top: 15px;
-}
-      </style>
 </head>
 <body class="login-bg">
-
+	 <div class="login_top">
+        <div class="login_logo"><img src="static/picture/qd.png"></div>
+        <a href="javascript:;" data-command="guiji">挂机下载</a>
+	    <a href="javascript:;"  data-command="showAppDownload" id="showAppDownload">手机客户端</a>
+    </div>
 <div class="login">
     <div class="login-box" id="loginBox" > 
-        <div class="logoimg"><img src="static/picture/lg-logo.png"></div>
+        <h1>用户登录</h1>
         <div class="login-form">
             <div class="login-form-inline">
                 <div class="form-control">
@@ -55,27 +50,23 @@ if (cdnDomain == '/' || cdnDomain == '//') {
                 <img src="LoginCode?t=1" class="imgCode" id="imgCode">
             </div>
         </div>
-        <div class="form-info"><span id="demouser" class="demouser">立即试玩</span> 忘记密码？点击这里联系  <span data-command="kefu" class="kefu">在线客服</span> </div>
+<div class="form-info"><span id="demouser" class="demouser">立即试玩</span> 忘记密码？点击这里联系  <span data-command="kefu" class="kefu">在线客服</span> </div>
         <div class="form-action"><button class="btn-login" id="loginBtn">登陆</button></div>
-        <div class="anniu">
-            <div class="box1">
-               <img class="tubiao" src="static/picture/app.png">
-               <a href="javascript:;"  data-command="showAppDownload" id="showAppDownload"><p class="wenzi">APP下载</p></a>
-            </div>
-            <div class="box2">
-                <img class="tubiao" src="static/picture/xianlu.png">
-                <a href=""><p class="wenzi">线路选择</p></a>
-            </div>
-            <div class="box3">
-                <img class="tubiao" src="static/picture/guaji.png">
-                <a href=""><p class="wenzi">挂机软件</p></a>
-            </div>
-        </div>
-        
     </div>
    
+   
 </div>
-
+<div id="login-bot">
+    <div class="botom_login">
+        <p>为了更好的操作体验首选Google Chrome、Firefox  浏览器，点击可立即下载。</p>
+        <div class="llp">
+					<a class="b-b-chrome"  href="http://rj.baidu.com/soft/detail/14744.html?ald" title="Chrome快速、简单且安全的浏览器" target="_blank"><img src="static/picture/chrome.png" ></a>
+					<a class="b-b-firefox" href="http://rj.baidu.com/soft/detail/11843.html?ald" title="火狐屡获大奖的开源浏览器" target="_blank"><img src="static/picture/firefox.png" ></a>
+					<a class="b-b-safari" href="http://rj.baidu.com/soft/detail/12966.html?ald" title="Safari提供极致愉悦的网络体验方式" target="_blank"><img src="static/picture/safari.png" > </a>
+					<a class="b-b-ie" href="http://rj.baidu.com/soft/detail/14917.html?ald" title="IE全面升级的IE浏览器" target="_blank"><img src="static/picture/ie.png" ></a>
+			</ul>
+    </div>
+</div>
 
 <script type="text/template" id="validate_card_tpl">
     <form novalidate onsubmit="return false;">

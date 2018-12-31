@@ -29,7 +29,7 @@ a,p,span,div{-webkit-font-smoothing: antialiased;}
 input,select,textarea{font-family:"Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;color:#333;font-size:14px;outline:0}
 input[type=button]{border:0px;outline: 0px; cursor: pointer}
 img{border:0}
-a,input,button{outline: none;}
+a,input,button{outline: none; color: #333333 !important;}
 textarea{resize: none;}
 ::-webkit-input-placeholder {color: #989ea4;}
 ::-moz-placeholder {color:#989ea4;}

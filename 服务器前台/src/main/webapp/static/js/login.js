@@ -16,16 +16,14 @@ $(function(){
         }
     });
 
-	//alert(top.window);
-	//alert(top.window.location.pathname);
     // 如果当前页面不是登录页面，则跳到登录页面
-   // if (top.window && top.window.location.pathname !== '/login') {
-     //   top.window.location = '/login';
- //   }
+    if (top.window && top.window.location.pathname !== '/login') {
+        top.window.location = '/login';
+    }
 
     // 客服按钮点击
     $doc.on('click', '[data-command=kefu]', function(e) {
-    	var url = 'http://api.pop800.com/chat/444055';
+    	var url = 'http://w1.ttkefu.com/k/linkurl/?t=4J9JDC7';
         window.open(url, 'service', 'height=600,width=800,directories=no,location=no,menubar=no,resizable=no,screenX=' + (window.screen.width - 600) / 2 + ',creenY=' + (window.screen.height - 500) / 2 + ',scrollbars=no,titlebar=no,toolbar=no')
     });
     
