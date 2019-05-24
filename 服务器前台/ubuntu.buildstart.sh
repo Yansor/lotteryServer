@@ -1,0 +1,1 @@
+mvn -DskipTests=true tomcat7:run-war
