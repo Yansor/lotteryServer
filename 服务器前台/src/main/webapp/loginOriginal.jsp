@@ -3,7 +3,7 @@
 	String ua = request.getHeader("User-Agent") ;
 	if (ua != null) {
 		if (ua.indexOf("iPhone") >-1 || ua.indexOf("iPad") >-1 || (ua.indexOf("ndroid") >-1 && ua.indexOf("WebKit") >-1)) {
-			response.sendRedirect("/m");
+			response.sendRedirect("/m/index.html");
 		} else {
 			response.sendRedirect("/login");
 		}

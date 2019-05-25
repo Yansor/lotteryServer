@@ -23,7 +23,7 @@
 <div class="login">
     <div class="login-info">
       <!--  <div class="logo"><img src="<%=cdnDomain%>static/images/logo-black.png?v=${cdnVersion}"></div>     -->
-        <P><img src="<%=cdnDomain%>static/images/ewm.png?v=${cdnVersion}" class="ewm"></P>
+        <%--<P><img src="<%=cdnDomain%>static/images/ewm.png?v=${cdnVersion}" class="ewm"></P>--%>
    <!--     <p><i class="icon iconfont">&#xf01ff;</i>下载PC客户端 <i style = "margin-left: 20px"class="icon iconfont">&#xf01ff;</i><span id="demouser" >立即试玩</span></p>  -->
     </div>
     <div class="login-box" id="loginBox" > 
