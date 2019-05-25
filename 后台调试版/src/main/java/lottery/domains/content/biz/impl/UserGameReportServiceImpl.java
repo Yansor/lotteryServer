@@ -95,15 +95,17 @@ public class UserGameReportServiceImpl
     for (Integer managerId : managerIds)
     {
       HistoryUserGameReportVO reportVO = this.uGameReportDao.historySumLowersAndSelf(managerId.intValue(), sTime, eTime);
-      if ((reportVO.getTransIn() > 0.0D) || (reportVO.getTransOut() > 0.0D) || (reportVO.getPrize() > 0.0D) || 
-        (reportVO.getWaterReturn() > 0.0D) || (reportVO.getProxyReturn() > 0.0D) || 
-        (reportVO.getActivity() > 0.0D) || (reportVO.getBillingOrder() > 0.0D))
-      {
-        user = this.lotteryDataFactory.getUser(managerId.intValue());
-        if (user != null)
+      if(reportVO !=null){
+        if ((reportVO.getTransIn() > 0.0D) || (reportVO.getTransOut() > 0.0D) || (reportVO.getPrize() > 0.0D) ||
+                (reportVO.getWaterReturn() > 0.0D) || (reportVO.getProxyReturn() > 0.0D) ||
+                (reportVO.getActivity() > 0.0D) || (reportVO.getBillingOrder() > 0.0D))
         {
-          reportVO.setName(user.getUsername());
-          userReports.add(reportVO);
+          user = this.lotteryDataFactory.getUser(managerId.intValue());
+          if (user != null)
+          {
+            reportVO.setName(user.getUsername());
+            userReports.add(reportVO);
+          }
         }
       }
     }

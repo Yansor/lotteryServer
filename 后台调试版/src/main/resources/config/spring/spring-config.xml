@@ -170,7 +170,7 @@
 				<!--<ref bean="writeWallFilter"/>-->
 			</list>
 		</property>
-		<property name="connectionProperties" value="config.decrypt=true;config.decrypt.key=${jdbc.master.publicKey}"/>
+		<!--<property name="connectionProperties" value="config.decrypt=true;config.decrypt.key=${jdbc.master.publicKey}"/>-->
 	</bean>
 
 	<!-- SESSION FACTORY -->
@@ -215,7 +215,7 @@
 				<!--<ref bean="writeWallFilter"/>-->
 			</list>
 		</property>
-		<property name="connectionProperties" value="config.decrypt=true;config.decrypt.key=${auto_load_jdbc.publicKey}"/>
+		<!--<property name="connectionProperties" value="config.decrypt=true;config.decrypt.key=${auto_load_jdbc.publicKey}"/>-->
 	</bean>
 
 	<!-- SESSION FACTORY -->

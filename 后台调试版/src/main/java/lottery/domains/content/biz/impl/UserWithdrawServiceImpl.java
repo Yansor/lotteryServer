@@ -36,6 +36,7 @@ import lottery.domains.content.payment.zs.ZSPayment;
 import lottery.domains.content.vo.user.HistoryUserWithdrawVO;
 import lottery.domains.content.vo.user.UserWithdrawVO;
 import lottery.domains.pool.LotteryDataFactory;
+import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang.StringUtils;
 import org.hibernate.criterion.Criterion;
 import org.hibernate.criterion.MatchMode;
@@ -254,8 +255,13 @@ public class UserWithdrawServiceImpl
     {
       List<HistoryUserWithdrawVO> list = new ArrayList();
       PageList pList = this.uWithdrawDao.findHistory(criterions, orders, start, limit);
-      for (Object tmpBean : pList.getList()) {
-        list.add(new HistoryUserWithdrawVO((HistoryUserWithdraw)tmpBean, this.lotteryDataFactory));
+      /**
+       * prevent npe exception
+       */
+      if(CollectionUtils.isNotEmpty(pList.getList())){
+        for (Object tmpBean : pList.getList()) {
+          list.add(new HistoryUserWithdrawVO((HistoryUserWithdraw)tmpBean, this.lotteryDataFactory));
+        }
       }
       pList.setList(list);
       return pList;

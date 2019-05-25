@@ -292,7 +292,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>lotteryServer</finalName>
+		<finalName>lotteryServer-front</finalName>
 		<plugins>
 			<!-- 设置源文件编码方式 -->
 			<plugin>
